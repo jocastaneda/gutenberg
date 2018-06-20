@@ -26,6 +26,9 @@ import * as coverImage from './cover-image';
 import * as embed from './embed';
 import * as file from './file';
 import * as freeform from './freeform';
+import * as halfMediaText from './layout-half-media-text';
+import * as halfMediaTextContent from './layout-half-media-text/content-area';
+import * as halfMediaTextMedia from './layout-half-media-text/media-area';
 import * as html from './html';
 import * as latestPosts from './latest-posts';
 import * as list from './list';
@@ -68,6 +71,9 @@ export const registerCoreBlocks = () => {
 		...embed.others,
 		file,
 		freeform,
+		halfMediaText,
+		halfMediaTextContent,
+		halfMediaTextMedia,
 		html,
 		latestPosts,
 		more,

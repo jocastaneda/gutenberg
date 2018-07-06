@@ -114,7 +114,7 @@ export const settings = {
 				},
 			},
 		],
-	},*/
+    },*/
 
 	edit( { attributes, setAttributes, style } ) {
 		if (attributes.aztecHeight == null) {
@@ -127,7 +127,7 @@ export const settings = {
 				style={ style, [ 
 					{ minHeight: Math.max( _minHeight, attributes.aztecHeight ) },
 				] }
-				text={ { text: attributes.content, eventCount: attributes.eventCount } }
+				//text={ { text:attributes.content, eventCount: attributes.eventCount } }
 				onContentSizeChange={ ( event ) => {
 					setAttributes( {
 						...attributes, 
@@ -150,6 +150,6 @@ export const settings = {
 	},
 	
 	save( { attributes } ) {
-		return attributes.content
+		return <p>{attributes.content}</p>;
 	},
 };
